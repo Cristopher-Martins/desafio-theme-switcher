@@ -1,0 +1,51 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 750ms ease;
+}
+
+body.light{
+    background-color: var(--light);
+}
+
+body.dark{
+    background-color: var(--dark);
+}
+
+.label{
+    width: 235px;
+    height: 100px;
+    background-color: var(--label);
+    border-radius: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#themeBtn {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    border-radius: 90px;
+    background-color: white;
+    transition: margin 0.5s ease-in-out;
+}
+
+#themeBtn.light{
+    margin: 7px 0 0 7px;
+}
+
+#themeBtn.dark{
+    margin: 7px 0 0 142px;
+}
+
+:hover#themeBtn{
+    cursor: pointer;
+}
